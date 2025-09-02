@@ -89,3 +89,39 @@ plt.show()
 
 - Spark holds steady 🔥 → Around ~30–34%, with small dips mid-year but rebounds by November, showing it’s a stable demand skill.
 
+
+
+# The Analysis
+## 4. What is the most optimal skills to learn for Data Engineer ?
+
+``` python
+
+from adjustText import adjust_text
+import matplotlib.pyplot as plt
+
+plt.scatter(df_DA_skills_high_demand['skill_percent'], df_DA_skills_high_demand['median_salary'])
+plt.show()
+
+```
+
+![Most Optimal Skills for Data Engineer in US](4_Project\images\optimal_using_matplot.png)
+
+# Modification Using SeaBorn
+
+![Most Optimal Skills for Data Engineer in US](4_Project\images\optimal_using_seaborn.png)
+
+## Insights
+
+### Here are the key insights from this scatter plot 📊:
+
+- SQL & Python dominate in demand → SQL (~70%) and Python (~55%) are required in most data analyst jobs, but they offer relatively lower median salaries ($125K–$128K).
+
+- High-paying but niche skills → Kafka ($145K), Scala ($140K), and NoSQL (~$140K) provide the highest salaries but appear in less than 20% of jobs.
+
+- Cloud tools vary → AWS (~45% jobs, $132K) has stronger demand and decent salary, while Azure (~30% jobs, $125K) is less demanded and lower paid.
+
+- Balanced skills → Spark (~35% jobs, $138K) and Java (~25% jobs, $137K) sit in the middle—good mix of demand and salary.
+
+- Snowflake & Hadoop → Moderate demand (~25–30%) but pay around $130–132K, making them solid but not standout skills.
+
+👉 Overall: SQL & Python are must-learns for entry, but specialized skills like Kafka, Scala, and NoSQL give the best salary boost if you want to differentiate yourself
